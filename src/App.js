@@ -9,8 +9,7 @@ import {
 import './App.css';
 
 import Plaground from './playground/index.js';
-import Aouth from './aouth/index.js';
-
+import AouthServerFlow from './aouth-server-flow/index.js';
 
 class App extends Component {
   render() {
@@ -26,7 +25,8 @@ const RouterApp =
   <BrowserRouter>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/api/authen/" component={Aouth} />
+      <Route path="/serverflow/main" component={AouthServerFlow} />
+      <Route path="/serverflow/callback" component={AouthServerFlow} />
     </div>
   </BrowserRouter>
   ;
